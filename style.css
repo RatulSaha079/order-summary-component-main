@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a{ color: hsl(228, 45%, 44%); }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+p{ font-size: 16px; }
+.main{
+    width: 400px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.head-image{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+.head-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-container{
+    padding: 20px ;
+    margin: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detail-container > h1{
+    font-weight: 900;
+}
+.annual-plan{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.part1{
+    height: 100%;
+    width: 60%;
+    display: flex;   
+    column-gap: 20px;
+    align-items: center;
+}
+.img-part{
+    height: 100%;
+    width: 24%;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-part img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    color: transparent;
+}
+.plan-part{
+    height: 100%;
+    width: 70%;
+    text-align: left;
+    position: relative;
+    top: 5px;
+}
+.plan-part p:first-child{ font-weight: bold; }
+.part2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(245, 75%, 52%);
+}
+.part2 p{
+    font-weight: 700;
+}
+.buttons{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 1px 1px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.buttons button:first-child{
+    background-color: hsl(245, 75%, 52%);
+    color: #ffffff;
+}
+
+@media(max-width:426px){
+    .main{
+        width: 300px;
+        height: 550px;
+    }
+    .head-image{
+        width: 300px;
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+        overflow: hidden;
+    }
+    .head-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    p{ font-size: 14px; }
+    .detail-container{
+        padding: 10px;
+        margin: 10px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .detail-container > h1{
+        font-weight: 900;
+        font-size: 22px;
+    }
+    .annual-plan{
+        height: 40px;
+        margin: 6px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .part1{
+        column-gap: 10px;
+    }
+    .img-part{
+        height: 90%;
+        width: 20%;
+    }
+    .plan-part p{
+        font-size: 14px;
+    }
+    .plan-part p:first-child{ font-weight: bold; }
+    .buttons{
+        height: 100px;
+    }
+    .buttons button{
+        height: 40px;
+    }
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');.attribution{font-size:11px;text-align:center}.attribution a{color:hsl(228,45%,44%)}*{padding:0;margin:0;box-sizing:border-box}
+body{background-color:hsl(225,100%,94%);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:"Red Hat Display",serif;font-optical-sizing:auto;font-weight:500;font-style:normal}
+p{font-size:16px}.main{width:400px;height:600px;background-color:#ffffff;border-radius:15px}.head-image{width:400px;height:200px;border-radius:15px 15px 0 0;overflow:hidden}.head-image img{width:100%;height:100%;object-fit:cover}.detail-container{padding:20px;margin:10px 20px;text-align:center;display:flex;flex-direction:column;gap:20px}.detail-container>h1{font-weight:900}.annual-plan{width:100%;height:50px;margin:10px 0px;display:flex;justify-content:space-around;align-items:center}.part1{height:100%;width:60%;display:flex;column-gap:20px;align-items:center}.img-part{height:100%;width:24%;background-color:hsl(225,100%,94%);border-radius:50%;overflow:hidden}.img-part img{height:100%;width:100%;object-fit:cover;color:transparent}.plan-part{height:100%;width:70%;text-align:left;position:relative;top:5px}.plan-part p:first-child{font-weight:bold}.part2{height:100%;width:20%;display:flex;justify-content:center;align-items:center;color:hsl(245,75%,52%)}.part2 p{font-weight:700}.buttons{width:100%;height:110px;display:flex;flex-direction:column;justify-content:space-between}.buttons button{width:100%;height:50px;border-radius:12px;border:none;box-shadow:1px 1px;font-weight:700;font-size:14px}.buttons button:first-child{background-color:hsl(245,75%,52%);color:#ffffff}
+@media(max-width:426px){.main{width:300px;height:550px}.head-image{width:300px;height:200px;border-radius:15px 15px 0 0;overflow:hidden}.head-image img{width:100%;height:100%;object-fit:cover}
+p{font-size:14px}.detail-container{padding:10px;margin:10px 20px;text-align:center;display:flex;flex-direction:column;gap:20px}.detail-container>h1{font-weight:900;font-size:22px}.annual-plan{height:40px;margin:6px 0;display:flex;justify-content:space-between;align-items:center}.part1{column-gap:10px}.img-part{height:90%;width:20%}.plan-part p{font-size:14px}.plan-part p:first-child{font-weight:bold}.buttons{height:100px}.buttons button{height:40px}} */
